@@ -1,0 +1,112 @@
+/* Resetting some default styles for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark gray text */
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+    height: 100%; /* Set height to 100% to allow main to fill the screen */
+    display: flex;
+    flex-direction: column; /* Ensure that body uses column layout */
+}
+
+/* Header styling */
+header {
+    background-color: burlywood; /* Rendang-inspired color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Main content styling */
+main {
+    background-color: blanchedalmond;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Allow main to fill the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Styling for the heading inside main */
+main h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Styling for the paragraph (subheading) */
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* List of ingredients (unordered list) */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* Instructions (ordered list) */
+ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ol li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* Styling for links or buttons if added later */
+a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem; /* Make header text smaller on mobile */
+    }
+
+    main {
+        padding: 15px; /* Less padding for smaller screens */
+    }
+
+    main h2 {
+        font-size: 1.5rem; /* Make subheading smaller on mobile */
+    }
+
+    ul, ol {
+        margin-left: 15px; /* Adjust list margins on smaller screens */
+    }
+}
